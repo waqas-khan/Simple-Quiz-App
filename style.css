@@ -1,0 +1,39 @@
+   body{
+   background-image: url("img1.jpg");
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   } 
+   div{
+       margin: auto;
+       text-align: center;
+       margin-top: 150px;
+       font-size: 120%;
+   }
+   textarea{
+       background: center; 
+       margin: auto;
+       text-align: center;
+       font-size: 120%;
+       border: none;
+   }
+button{
+  padding: 10px 20px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: auto;
+  margin-top: 10px;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
