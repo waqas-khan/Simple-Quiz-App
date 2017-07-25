@@ -101,17 +101,11 @@ var timer = 0.00;
 var correctAnswere = 0;
 function myfunction(){
     document.getElementById("result").innerHTML = "";
-// var myVar = setInterval(myTimer, 1000);
-// function myTimer(){
-//     timer++;
-//     document.getElementById("timer").innerHTML = timer;
-// }
     question.style.display = "block"
-option1.style.display = "Inline";
-option2.style.display = "Inline";
-radio1.style.display = "Inline";
-radio2.style.display = "Inline";
-
+    option1.style.display = "Inline";
+    option2.style.display = "Inline";
+    radio1.style.display = "Inline";
+    radio2.style.display = "Inline";
     if(i <= 9){
         if(i >= 1){
     var selected;
@@ -125,16 +119,16 @@ radio2.style.display = "Inline";
     if(ans2 === true)
         selected = option2.innerHTML
     if(selected === correct){
-        console.log("Right");
+        // console.log("Right");
         num = num + 10;
         correctAnswere++;
         
     }
     if(selected !== correct){
-        console.log("wrong")
+        // console.log("wrong")
         
     }
-    console.log(a)
+    // console.log(a)
     a++;
 } 
 
@@ -146,7 +140,7 @@ radio2.style.display = "Inline";
     option1.innerHTML = opt1;
     option2.innerHTML = opt2;
     document.getElementById("button").innerHTML = "Next";
-    console.log(i)    
+    // console.log(i)    
     i++
     }
     else if (i == 10){    
@@ -162,15 +156,15 @@ radio2.style.display = "Inline";
     if(ans2 === true)
         selected = option2.innerHTML
     if(selected === correct){
-        console.log("Right");
+        // console.log("Right");
         num = num + 10;
         correctAnswere++;
     }
     if(selected !== correct){
-        console.log("wrong")
+        // console.log("wrong")
         
     }
-    console.log(a)
+    // console.log(a)
     a++;
 }
     question.innerHTML = ' Your Quiz has been submited';
@@ -179,7 +173,7 @@ radio2.style.display = "Inline";
     radio1.style.display = "none";
     radio2.style.display = "none";
     document.getElementById("button").innerHTML = "Show Result";
-    console.log(i)
+    // console.log(i)
     i++
     }
     else if(i == 11){
@@ -190,11 +184,14 @@ radio2.style.display = "Inline";
     radio2.style.display = "none";
     document.getElementById("button").style.display = "none";
     var percent = (num/100)*100;
+    document.getElementById("heading").innerHTML = "Result"
     document.getElementById("result").innerHTML =" Your correct answers are:" + correctAnswere + "<br/>Your total score is " + num  ;        
     }
-    console.log(num)
-    localStorage.setItem("numbers", num)
+    // console.log(num)
+    // localStorage.setItem("numbers", num);
 
+    radio1.checked = false;
+    radio2.checked = false
     } 
 
 question.style.display = "none";
