@@ -8,12 +8,13 @@
        margin-top: 150px;
        font-size: 120%;
    }
-   textarea{
+   p{
        background: center; 
        margin: auto;
        text-align: center;
        font-size: 120%;
        border: none;
+       padding-bottom: 90px;
    }
 button{
   padding: 10px 20px;
