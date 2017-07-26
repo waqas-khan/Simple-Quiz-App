@@ -2,20 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <div id="container">
-        <h1 id="heading"></h1>
-        <p name="questions" id="question" cols="80 " rows="8"></p><br/>
-        <input type="radio" class="radio2" id="radio1" name="radio"> <label id="option1" for="radio1"></label><br/>
-        <input type="radio" class="radio1" id="radio2" name="radio"> <label id="option2" for="radio2"></label><br/>
-        <p  id="result"></p>
+    <fieldset>
+        <legend>SignUp</legend>
+    <label id="label1">Email: <input type="email" id="email"> </label><br/>
+    <label id="label2">Password: <input type="password" id="password"> </label><br/>
+    <button type="submit" id="signup" onclick="signUp()"> Sign Up</button>
+    <button type="submit" id="Signin" onclick="login()"> Sign in </button>
+    <div id="authMessage">
         
-        <button id="button" onclick="myfunction()">Start</button>
-
     </div>
-    <script src="app.js"></script>
+
+    </fieldset>
 </body>
+<script src="app.js">
+    
+</script>
 </html>
